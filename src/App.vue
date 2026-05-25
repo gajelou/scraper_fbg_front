@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 
-const API_URL = "http://localhost:3000";
+const API_URL = "scraperceb-production.up.railway.app";
 
 const agio = ref<number>(0);
 const carregando = ref(false);
