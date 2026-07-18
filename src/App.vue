@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 
-const API_URL = "https://srv1802060.hstgr.cloud";
+const API_URL = "http://localhost:3000";
 
 const agio = ref<number>(30);
 const mostrarPrecos = ref(true);
@@ -406,6 +406,26 @@ h2 {
   outline: none;
 }
 
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px 16px;
+  margin-top: 12px;
+}
+
+.category-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  min-width: 0;
+}
+
+.category-item span {
+  font-size: 7px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
 .checkbox {
   display: flex;
   align-items: center;
@@ -705,6 +725,26 @@ h2 {
   .error {
     font-size: 13px;
     padding: 10px;
+  }
+
+  
+}
+
+@media (max-width: 1024px) {
+  .category-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .category-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 420px) {
+  .category-list {
+    grid-template-columns: 1fr;
   }
 }
 </style>
