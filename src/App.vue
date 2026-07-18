@@ -115,7 +115,7 @@ onMounted(async () => {
         <div class="logo-mark">FBG</div>
 
         <div>
-          <h1>FBG</h1>
+          <h1>FBG COMERCIAL</h1>
           <p>GERADOR DE CATÁLOGO ATACADO</p>
         </div>
       </div>
