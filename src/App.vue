@@ -237,7 +237,7 @@ onMounted(async () => {
 
         <div v-if="carregando" class="loading-box">
           <div class="tools-animation">
-            <span>U+23F5</span>
+            <span>▶</span>
             <span>🔧</span>
             <span>🪛</span>
           </div>
